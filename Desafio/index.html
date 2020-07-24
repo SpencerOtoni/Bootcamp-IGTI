@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Desafio 02</title>
+  </head>
+  <body>
+    <div class="country-container">
+      <div class="title">
+        <h1>BootCamp IGTI</h1>
+        <h2>- - Desafio Modulo 01 - -</h2>
+      </div>
+
+      <form onsubmit="event.preventDefault();" role="search">
+          <label for="search">Search for stuff</label>
+          <input id="input_pesquisa" type="search" placeholder="Search..." autofocus required />
+          <button id="button_pesquisa" type="submit">Go</button>    
+      </form>
+      
+      <div class="statistics">
+        <!-- <h1>Estatíticas</h1>
+
+        <div class="statistic-data">
+          <span id="women">Sexo masculino: 2</span>
+          <span id="male">Sexo feminino: 2</span>
+        </div>
+        
+        <div class="statistic-data">
+          <span id="sum-age">Soma das idades: 152</span>
+          <span id="average-age">Média das idades: 25,5</span>
+        </div> -->
+        <!-- <h5>Países (<span id="countCountries"></span>)</h5>
+        <h6>População total: <span id="totalPopulationList"></span></h6>
+        <div id="tabCountries"></div> -->
+      </div>
+
+
+      <div class="country-list">
+        <h5>Países (<span id="countFavorites"></span>)</h5>
+        <h6>População total: <span id="totalPopulationFavorites"></span></h6>
+        <div id="tabFavorites"></div>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

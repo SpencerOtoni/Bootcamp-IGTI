@@ -1,0 +1,140 @@
+.country-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  padding: 15px;
+ }
+
+ .title h1{
+    margin-bottom: 10px;
+
+ }
+
+ .statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.statistics h1{
+  font-size: x-large;
+}
+
+.statistic-data{
+  display: flex;
+  width: 100%;
+  font-size: medium;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+
+
+
+
+ .input{
+     background-color: teal;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .topo{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: thistle;
+  margin-top: 10px;
+ }
+ 
+ 
+ {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  color: white;
+  border: 1px solid rgb(243, 238, 238);
+  border-radius: 5px;
+  padding: 10px;
+ }
+ 
+ .data{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+ 
+ .users{
+     display: flex;
+     flex-direction: column;
+     color: white;
+     border: 1px solid rgb(243, 238, 238);
+     border-radius: 5px;
+     padding: 10px;
+    }
+ 
+ .usersDetail{
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+    
+ 
+ .data2{
+     color: white;
+     border: 1px solid rgb(243, 238, 238);
+     border-radius: 5px;
+     padding: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 15px;
+     justify-content: space-around;
+     width: 350px;
+ }
+ 
+ 
+
+
+
+
+
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add {
+  border-radius: 50%;
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+}
