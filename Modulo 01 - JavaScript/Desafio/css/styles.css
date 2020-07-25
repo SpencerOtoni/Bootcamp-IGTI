@@ -13,7 +13,14 @@
 
  .title h1{
     margin-bottom: 10px;
+ }
 
+ .start span{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   margin-top: 15px;
  }
 
  .statistics {
@@ -38,86 +45,35 @@
   font-size: medium;
   padding: 15px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-
-
-
-
- .input{
-     background-color: teal;
-     display: flex;
-     justify-content: center;
- }
- 
- .topo{
+.detail-user{
   display: flex;
-  justify-content: center;
-  align-items: baseline;
-  background-color: thistle;
-  margin-top: 10px;
- }
- 
- 
- {
-  display: flex;
-  flex-direction: column;
-  margin-left: 25px;
-  color: white;
-  border: 1px solid rgb(243, 238, 238);
-  border-radius: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
   padding: 10px;
  }
  
- .data{
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
- }
- 
- .users{
-     display: flex;
-     flex-direction: column;
-     color: white;
-     border: 1px solid rgb(243, 238, 238);
-     border-radius: 5px;
-     padding: 10px;
-    }
- 
  .usersDetail{
-     display: flex;
-     justify-content: flex-start;
-     flex-direction: column;
-     align-items: center;
-     flex-wrap: wrap;
- }
-    
- 
- .data2{
      color: white;
      border: 1px solid rgb(243, 238, 238);
      border-radius: 5px;
-     padding: 10px;
      display: flex;
      flex-wrap: wrap;
-     margin-bottom: 15px;
      justify-content: space-around;
-     width: 350px;
+     align-items: baseline;
+     margin-left: 15px;
+     margin-bottom: 15px;
  }
- 
- 
-
-
-
-
-
 
 img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
   margin-left: 10px;
-
   border-radius: 50%;
 }
 

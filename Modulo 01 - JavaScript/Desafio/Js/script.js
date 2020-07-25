@@ -9,7 +9,8 @@ let statistics = {
   middleAges : 0
 }
 
-let divStatistics = document.querySelector('.statistics')
+let divStatistics = document.querySelector('.start')
+let divDetailUser = document.querySelector('.detail')
 
 let totalWomen = document.querySelector('#women')
 let totalMale = document.querySelector('#male')
@@ -72,7 +73,7 @@ function userFilter(name){
   })
 
   renderStatistics(filteruser)
-  //userDetails(filteruser)
+  userDetails(filteruser)
 
 }
 
@@ -97,6 +98,7 @@ function renderStatistics(users){
     statistics.middleAges = (statistics.sumAges/users.length).toFixed(2)
 
     let statisticsHTML = `
+    <div class="statistics">
       <h1>Estatíticas</h1>
       <div class="statistic-data">
         <span id="women">Sexo masculino: ${statistics.userFemale}</span>
@@ -107,15 +109,44 @@ function renderStatistics(users){
         <span id="sum-age">Soma das idades: ${statistics.sumAges}</span>
         <span id="average-age">Média das idades: ${statistics.middleAges}</span>
       </div>
+    </div>
     `
     divStatistics.innerHTML = statisticsHTML
   }else{
-    divStatistics.innerHTML = 'teste'
+    divStatistics.innerHTML = `
+    '<div class="statistics">
+        Não foram encontrados dados.
+     </div>
+    `
   }
-
-   
+ 
 }
 
+function userDetails(users){
+
+  if(users.length !==0){
+
+    let usersDetailHTML = ` <div class="usersDetail">`
+
+    users.forEach(user => {
+      const { fullname, picture, age } = user
+
+      const userHTML = `
+        <img src="${picture}" alt="${fullname}">
+        <span>{fullname}, {age}</span>
+      </div>
+      `
+
+      usersDetailHTML += userHTML
+    })
+
+    usersDetailHTML += "</div>"
+
+    divDetailUser.innerHTML = usersDetailHTML
+
+  }
+
+}
 
 
 start()
