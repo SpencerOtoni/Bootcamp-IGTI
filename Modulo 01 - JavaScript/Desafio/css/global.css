@@ -1,7 +1,7 @@
 :root {
     --rad: .7rem;
     --dur: .3s;
-    --color-dark: #2f2f2f;
+    --color-dark: #0D0D0D;
     --color-light: #fff;
     --color-brand: #57bd84;
     --font-fam: 'Lato', sans-serif;
@@ -31,5 +31,6 @@
   *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
+    box-sizing: border-box;
   }
   

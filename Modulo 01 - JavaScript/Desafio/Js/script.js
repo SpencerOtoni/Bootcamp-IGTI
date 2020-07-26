@@ -11,6 +11,7 @@ let statistics = {
 
 let divStatistics = document.querySelector('.start')
 let divDetailUser = document.querySelector('.detail')
+let msgstart = document.querySelector('#start-message')
 
 let totalWomen = document.querySelector('#women')
 let totalMale = document.querySelector('#male')
@@ -18,19 +19,23 @@ let totalMale = document.querySelector('#male')
 let sumAge = document.querySelector('#sum-age')
 let averageAge = document.querySelector('#average-age')
 
-function start(){
+let numberFormat = null
 
-  fetchUsers()
+async function start(){
+
+  numberFormat = Intl.NumberFormat('pt-BR')
+
+  await fetchUsers()
 
   inputPesquisa.addEventListener('keyup',(event)=>{
     const { value } = event.target
-
-      if(value === '' || value === ' '){
-        divStatistics.innerHTML = ''
-        return
-      }
-
-    userFilter(value.toLowerCase())
+    if(value.length >= 1){
+      userFilter(value.toLowerCase())
+    }else{
+      inputPesquisa.value = ''
+      render()
+      return
+    }
   })
 }
 
@@ -45,6 +50,7 @@ async function fetchUsers(){
 
     return{
       fullname: `${first} ${last}`.toLowerCase(),
+      name: `${first} ${last}`,
       picture: large,
       age,
       gender
@@ -54,17 +60,12 @@ async function fetchUsers(){
   .sort((a, b) =>{
     return a.fullname.localeCompare(b.fullname)
   })
-
-  render()
   
 }
 
-function render(){
-  userFilter()
-}
-
-
 function userFilter(name){
+
+  
 
   const filteruser = allUser.filter(user => {
     return(
@@ -77,6 +78,14 @@ function userFilter(name){
 
 }
 
+function render (){
+  
+  divStatistics.innerHTML = ''
+  divDetailUser.innerHTML = ''
+  divStatistics.innerHTML = `<span id="start-message"> Para comerçamos, por 
+  favor insira um nome. </span>`
+
+}
 function renderStatistics(users){
 
   if(users.length !==0){
@@ -94,15 +103,16 @@ function renderStatistics(users){
   
     statistics.userFemale = totalFemale.length
     statistics.userMale = totalMale.length
-    statistics.sumAges = totalAges
-    statistics.middleAges = (statistics.sumAges/users.length).toFixed(2)
+    statistics.sumAges = formatNumber(totalAges)
+    statistics.middleAges = (totalAges/users.length).toFixed(2)
 
     let statisticsHTML = `
     <div class="statistics">
-      <h1>Estatíticas</h1>
+      <h1>Estatísticas</h1>
+      <span id="total-user"> Usuários encontrados: ${users.length} </span>
       <div class="statistic-data">
-        <span id="women">Sexo masculino: ${statistics.userFemale}</span>
-        <span id="male">Sexo feminino: ${statistics.userMale}</span>
+        <span id="women">Sexo masculino: ${statistics.userMale}</span>
+        <span id="male">Sexo feminino: ${statistics.userFemale}</span>
       </div>
           
       <div class="statistic-data">
@@ -115,7 +125,7 @@ function renderStatistics(users){
   }else{
     divStatistics.innerHTML = `
     '<div class="statistics">
-        Não foram encontrados dados.
+      <span id="not-found">Não há resultados correspondentes a pesquisa.</span>
      </div>
     `
   }
@@ -124,29 +134,29 @@ function renderStatistics(users){
 
 function userDetails(users){
 
-  if(users.length !==0){
+  let usersDetailHTML = `<div class="detail-user">`
 
-    let usersDetailHTML = ` <div class="usersDetail">`
+  users.forEach(user => {
+    const { name, picture, age } = user
 
-    users.forEach(user => {
-      const { fullname, picture, age } = user
+    const userHTML = `
+    <div class="usersDetail">
+      <img src="${picture}" alt="${name}">
+      <span>${name}, ${age}</span>
+    </div>
+    `
 
-      const userHTML = `
-        <img src="${picture}" alt="${fullname}">
-        <span>{fullname}, {age}</span>
-      </div>
-      `
+    usersDetailHTML += userHTML
+  })
 
-      usersDetailHTML += userHTML
-    })
+  usersDetailHTML += "</div>"
 
-    usersDetailHTML += "</div>"
-
-    divDetailUser.innerHTML = usersDetailHTML
-
-  }
+  divDetailUser.innerHTML = usersDetailHTML
 
 }
 
+function formatNumber(number){
+  return numberFormat.format(number)
+}
 
 start()
