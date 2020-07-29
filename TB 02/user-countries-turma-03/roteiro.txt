@@ -1,0 +1,47 @@
+Roteiro para o projeto "user-countries" ✔
+=========================================
+
+(✔) Montar ambiente no VSCode
+
+(✔) Importar Materialize:
+  (✔) Link:  
+     <link 
+       rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+     >
+
+(✔) Montar HTML:
+  (✔) Inserir título h1
+  (✔) Inserir preloader do Materialize
+  (✔) Inserir <div> para listar usuários (id: divUsers)
+
+
+(✔) Conectar JavaScript e CSS.
+  (✔) Utilizar 
+    <script defer src='./js/script.js'></script> e 
+    <link 
+       rel="stylesheet" 
+       href="./css/style.css"
+     >
+
+(✔) Comparar API's e identificar o que pode ser
+   relacionado
+   API Users: https://randomuser.me/api/?results=100&seed=promise&nat=us,fr,au,br
+   API Countries: https://restcountries.eu/rest/v2/all
+
+(✔) Montar backend com Node.js e json-server
+
+() Implementar lógica com JavaScript.
+   (✔) Declarar users, countries, userCountries.
+   (✔) Função start.
+   (✔) Função fetchUsers.
+   (✔) Função fetchCountries
+   (✔) Função hideSpinner
+   (✔) Função mergeUsersAndCountries
+   (✔) Função render.
+
+(✔) Estilizar com CSS
+(✔) Isolar requisições em duas Promises
+(✔) Fazer com que as promises demorem a ser executadas (5s e 6s, respectivamente)
+(✔) Utilizar "console.time" e "console.timeEnd" para medir o tempo
+(✔) Implementar Promise.all
