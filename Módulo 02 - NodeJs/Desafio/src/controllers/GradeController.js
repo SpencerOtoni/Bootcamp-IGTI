@@ -29,6 +29,14 @@ class GradeController {
       console.log(error);
     }
   }
+
+  async store(req, res){
+
+  }
+
+  async update(req, res){
+    
+  }
 }
 
 export default new GradeController();
