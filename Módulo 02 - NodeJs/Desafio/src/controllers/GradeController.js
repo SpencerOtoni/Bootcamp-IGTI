@@ -22,36 +22,6 @@ class GradeController {
     }
   }
 
-  async index(req, res) {
-    try {
-      const data = JSON.parse(await readFile(FileNameArchive));
-      const { grades } = data;
-      res.send(grades);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  async show(req, res) {
-    try {
-      const { id } = req.params;
-      const data = JSON.parse(await readFile(FileNameArchive));
-      const { grades } = data;
-
-      const student = grades.find((student) => {
-        return student.id === parseInt(id);
-      });
-
-      if (student) {
-        res.send(student);
-      } else {
-        res.status(400).send({ error: "Usuário não encontrado." });
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   async update(req, res) {
     try {
       const { id } = req.params;
@@ -112,6 +82,108 @@ class GradeController {
       } else {
         res.status(400).send({ error: "Usuário não cadastrado." });
       }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async show(req, res) {
+    try {
+      const { id } = req.params;
+      const data = JSON.parse(await readFile(FileNameArchive));
+      const { grades } = data;
+
+      const student = grades.find((student) => {
+        return student.id === parseInt(id);
+      });
+
+      if (student) {
+        res.send(student);
+      } else {
+        res.status(400).send({ error: "Usuário não encontrado." });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async showNotaTotal(req, res) {
+    try {
+      const { student, subject } = req.body;
+      const data = JSON.parse(await readFile(FileNameArchive));
+      const { grades } = data;
+      const grade = grades.filter((students) => {
+        return students.student === student && students.subject === subject;
+      });
+
+      console.log(grade);
+
+      const totalValue = grade.reduce((acc, curr) => {
+        return acc + curr.value;
+      }, 0);
+
+      if (grade.length > 0) {
+        res.send({ value: totalValue });
+      } else {
+        res.status(400).send({ error: "Usuário não encontrado." });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async showNotaAverage(req, res) {
+    try {
+      const { subject, type } = req.body;
+      const data = JSON.parse(await readFile(FileNameArchive));
+      const { grades } = data;
+      const grade = grades.filter((student) => {
+        return student.subject === subject && student.type === type;
+      });
+      console.log(grade);
+      const totalValue = grade.reduce((acc, curr) => {
+        return acc + curr.value;
+      }, 0);
+
+      const average = totalValue / grade.length;
+      if (grade.length > 0) {
+        res.send({ value: average.toFixed(2) });
+      } else {
+        res.status(400).send({ error: "Usuário não encontrado." });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async showTopGrades(req, res) {
+    try {
+      const { subject, type } = req.body;
+      const data = JSON.parse(await readFile(FileNameArchive));
+      const { grades } = data;
+      const grade = grades.filter((student) => {
+        return student.subject === subject && student.type === type;
+      }).sort((a,b) =>{
+        return b.value - a.value
+      })
+
+      console.log(grade)
+      
+      if (grade.length > 0) {
+        res.send(grade.slice(0,3));
+      } else {
+        res.status(400).send({ error: "Usuário não encontrado." });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async index(req, res) {
+    try {
+      const data = JSON.parse(await readFile(FileNameArchive));
+      const { grades } = data;
+      res.send(grades);
     } catch (error) {
       console.log(error);
     }
