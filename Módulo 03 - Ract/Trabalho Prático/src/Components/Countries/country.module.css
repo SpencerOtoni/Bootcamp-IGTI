@@ -1,0 +1,29 @@
+.img{
+  width: 80px;
+  border-radius: 10px;
+}
+
+.coutries{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.coutry{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px;
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+}
