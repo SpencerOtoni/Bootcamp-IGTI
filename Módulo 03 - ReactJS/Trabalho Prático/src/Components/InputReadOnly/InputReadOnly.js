@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { calculateSalaryFrom } from "../../Libs/salary";
+import { formatNumber } from '../../Libs/formatHelpers'
 
 function InputReadOnly(props) {
   const { value } = props;
@@ -9,13 +10,14 @@ function InputReadOnly(props) {
   useEffect(() => {
     const data = calculateSalaryFrom(value);
     setinfoSalary({
-      baseINSS: data.baseINSS,
-      discountINSS: data.discountINSS,
+      baseINSS: formatNumber(data.baseINSS),
+      discountINSS: formatNumber(data.discountINSS),
       percetInss: data.percetInss,
-      baseIRPF: data.baseIRPF,
-      discountIRPF: data.discountIRPF,
+      baseIRPF: formatNumber(data.baseIRPF),
+      discountIRPF: formatNumber(data.discountIRPF),
       percetIRPF: data.percetIRPF,
-      netSalary: data.netSalary,
+      netSalary: formatNumber(data.netSalary),
+      percetNetSalary : data.percetNetSalary
     });
   }, [value]);
 
@@ -77,7 +79,7 @@ function InputReadOnly(props) {
                 type="text"
                 id="first_name3"
                 min="0"
-                value={infoSalary.netSalary}
+                value={`${infoSalary.netSalary} (${infoSalary.percetNetSalary}%)`}
               />
               <label className="active">Salário liquido</label>
             </div>

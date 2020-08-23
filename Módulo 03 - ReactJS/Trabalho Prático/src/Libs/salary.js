@@ -98,6 +98,9 @@ function calculateSalaryFrom(fullSalary) {
 
   const percetIRPF = ((discountIRPF/fullSalary) * 100).toFixed(2)
 
+  const percetNetSalary = ((netSalary/fullSalary) * 100).toFixed(2)
+  
+
   return {
     baseINSS,
     discountINSS,
@@ -106,6 +109,7 @@ function calculateSalaryFrom(fullSalary) {
     discountIRPF,
     percetIRPF,
     netSalary,
+    percetNetSalary
   };
 }
 
