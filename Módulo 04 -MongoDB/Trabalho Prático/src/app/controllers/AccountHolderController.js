@@ -88,16 +88,23 @@ class AccountHolderController {
 
     const isSameAgency = accountDestino.agencia === accountOrigen.agencia;
 
-    /* const saldo = isSameAgency
+    const saldo = isSameAgency
       ? accountOrigen.balance > valor
       : accountOrigen.balance > valor + 8;
 
-      console.log(saldo, isSameAgency)
     if (isSameAgency) {
+      if(accountOrigen.balance > valor + 8){
       return res
         .status(400)
         .json({ error: "Transfer not permitted, insuffient funds" });
-    } */
+      }
+    }else{
+      if(accountOrigen.balance > valor){
+        return res
+          .status(400)
+          .json({ error: "Transfer not permitted, insuffient funds" });
+        }
+    }
 
     const accountUpdateOrigen = await account.findByIdAndUpdate(accountOrigen.id, {
       balance: isSameAgency
