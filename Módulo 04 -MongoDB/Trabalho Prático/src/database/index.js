@@ -1,6 +1,6 @@
 import db  from "../config/database.js";
 
-const connetMongoDB = async () => {
+export default (async () => {
   try {
     await db.mongoose.connect(db.url, {
       useNewUrlParser: true,
@@ -11,9 +11,6 @@ const connetMongoDB = async () => {
 
     console.log("Conectado com o mongodb com sucesso");
   } catch (error) {
-    console.log("Erro ao conectar no mongodb " + error);
+    console.log(`Erro ao conectar no mongodb: ${error}` );
   }
-}
-
-
-export default connetMongoDB
+})()

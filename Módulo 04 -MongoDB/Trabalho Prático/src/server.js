@@ -3,8 +3,6 @@ import cors from "cors";
 import routes from "./routes.js";
 import connection from "./database/index.js";
 
-connection();
-
 const app = express();
 
 app.use(express.json());
