@@ -3,3 +3,9 @@
 2020-09-01T00:09:41.371Z [my-bank] info: Conectado com o mongodb com sucesso
 2020-09-01T00:10:08.656Z [my-bank] info: 🚀 Server running on port 3000!
 2020-09-01T00:10:08.680Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-01T00:14:02.152Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-01T00:14:02.172Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-01T00:16:57.589Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-01T00:16:57.608Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-01T00:17:35.253Z [my-bank] info: [GET] /saldo
+2020-09-01T00:17:56.073Z [my-bank] info: [GET] /saldo1

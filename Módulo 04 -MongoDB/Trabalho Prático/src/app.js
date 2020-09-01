@@ -9,6 +9,8 @@ class App {
 
     this.middlewares()
     this.routes();
+
+    this.status500()
   }
 
   middlewares() {
@@ -31,6 +33,27 @@ class App {
 
   routes() {
     this.server.use(routes);
+  }
+
+  status500(){
+    this.server.use((err, request, response, _next) => {
+      if (err instanceof AppErrors) {
+        global.logger.error(
+          `${request.method} ${request.originalUrl} - ${err.message}`,
+        );
+        return response.status(err.statusCode).json({
+          status: 'error',
+          message: err.message,
+        });
+      }
+    
+      console.log(err);
+    
+      return response.status(500).json({
+        status: 'error',
+        message: 'Internal server error',
+      });
+    });
   }
 }
 
