@@ -14,6 +14,19 @@ class App {
   middlewares() {
     this.server.use(express.json());
     this.server.use(cors());
+
+    this.server.use((request, _response, next) => {
+      const { method, url } = request;
+    
+      const logLabel = `[${method.toUpperCase()}] ${url}`;
+    
+      global.logger.info(logLabel);
+      console.time(logLabel);
+    
+      next();
+    
+      console.timeEnd(logLabel);
+    });
   }
 
   routes() {
