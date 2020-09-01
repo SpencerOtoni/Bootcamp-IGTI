@@ -9,3 +9,4 @@
 2020-09-01T00:16:57.608Z [my-bank] info: Conectado com o mongodb com sucesso!
 2020-09-01T00:17:35.253Z [my-bank] info: [GET] /saldo
 2020-09-01T00:17:56.073Z [my-bank] info: [GET] /saldo1
+2020-09-01T00:19:33.463Z [my-bank] info: [DELETE] /delete
