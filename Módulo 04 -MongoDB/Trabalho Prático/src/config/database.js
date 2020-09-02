@@ -1,9 +1,8 @@
 import mongoose from 'mongoose';
 
 const db = {
-  url : 'mongodb://localhost:27017/bank',
+  url : process.env.MONGODB_URI,
   mongoose : mongoose
 }
-
 
 export default  db 

@@ -19,7 +19,7 @@ global.logger = winston.createLogger({
   format: combine(label({ label: 'my-bank' }), timestamp(), myFormat),
 });
 
-app.listen(3000, async () => {
+app.listen(process.env.PORT || 3000, async () => {
   try {
     console.log(`🚀 Server running on port 3000!`);
     global.logger.info('🚀 Server running on port 3000!');

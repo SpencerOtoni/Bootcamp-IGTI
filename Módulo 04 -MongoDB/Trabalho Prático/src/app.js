@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from "express";
 import cors from "cors";
 import routes from "./routes.js";
@@ -6,11 +7,13 @@ import connection from "./database/index.js";
 class App {
   constructor() {
     this.server = express();
+    this.dotenv = dotenv.config();
 
     this.middlewares()
     this.routes();
 
     this.status500()
+
   }
 
   middlewares() {

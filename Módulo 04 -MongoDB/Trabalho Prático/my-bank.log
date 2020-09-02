@@ -10,3 +10,85 @@
 2020-09-01T00:17:35.253Z [my-bank] info: [GET] /saldo
 2020-09-01T00:17:56.073Z [my-bank] info: [GET] /saldo1
 2020-09-01T00:19:33.463Z [my-bank] info: [DELETE] /delete
+2020-09-02T00:05:15.731Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:05:15.734Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:06:34.826Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:06:34.829Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:07:31.419Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:07:31.422Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:09:31.701Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:09:31.707Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:10:15.522Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:10:15.528Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:13:46.440Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:13:46.445Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:13:58.163Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:13:58.168Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:14:45.589Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:14:45.593Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:14:58.720Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:14:58.726Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:18:08.398Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:18:08.404Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:19:08.172Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:19:08.183Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:21:46.351Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:21:46.355Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:22:39.923Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:22:39.927Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:22:58.298Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:22:58.303Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:23:14.080Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:23:14.084Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:24:57.451Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:24:57.454Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:25:47.423Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:25:47.425Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:26:48.281Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:26:48.285Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:27:02.557Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:27:02.566Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:28:02.713Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:28:02.716Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:28:44.039Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:28:44.045Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:28:53.075Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:28:53.085Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:29:11.216Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:29:11.220Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:30:37.679Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:30:37.705Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:30:48.642Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:30:48.645Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:33:55.985Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:33:55.991Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:35:31.184Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:35:31.190Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:38:42.779Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:38:42.784Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:40:03.548Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:40:03.557Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:42:40.378Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:42:40.385Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:43:49.970Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:43:49.979Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:44:08.607Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:44:08.611Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:44:19.514Z [my-bank] error: Erro ao conectar no mongodb: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.!
+2020-09-02T00:44:19.519Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:45:03.744Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:45:03.771Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:46:23.781Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:46:23.800Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:46:56.450Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:46:56.478Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:47:04.694Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:47:04.717Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:47:19.766Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:47:19.784Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:47:27.577Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:47:27.596Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:47:47.384Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:47:47.402Z [my-bank] info: Conectado com o mongodb com sucesso!
+2020-09-02T00:48:03.403Z [my-bank] info: 🚀 Server running on port 3000!
+2020-09-02T00:48:03.422Z [my-bank] info: Conectado com o mongodb com sucesso!
