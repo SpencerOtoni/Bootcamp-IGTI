@@ -17,10 +17,10 @@
 ##: Entre em contato!
 
 <a href="https://www.linkedin.com/in/spencer-otoni-desenvolvedor/" target="_blank" >
-  <img alt="Linkedin - Stefano Saffran" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+  <img alt="Linkedin - Spencer" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
 </a>&nbsp;&nbsp;&nbsp;
 <a href="mailto:sspencerotoni@gmail.com" target="_blank" >
-  <img alt="Email - Stefano Saffran" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
+  <img alt="Email - Spencer" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
 </a> 
 
 ---
